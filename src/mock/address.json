@@ -1,0 +1,35 @@
+[
+    {
+        "id": 5,
+        "userAddress": "北京市昌平区1000",
+        "userId": 2,
+        "provinceId": 1,
+        "consignee": "test110",
+        "phoneNum": "15011112222",
+        "isDefault": "0",
+        "regionId": 1,
+        "fullAddress": "北京北京市昌平区1000"
+    },
+    {
+        "id": 20,
+        "userAddress": "车城西四路恒大绿洲",
+        "userId": 2,
+        "provinceId": 1,
+        "consignee": "Jesse",
+        "phoneNum": "18790986752",
+        "isDefault": "0",
+        "regionId": 1,
+        "fullAddress": "北京车城西四路恒大绿洲"
+    },
+    {
+        "id": 25,
+        "userAddress": "dgts",
+        "userId": 2,
+        "provinceId": 1,
+        "consignee": "sishjsb",
+        "phoneNum": "sfsv",
+        "isDefault": "1",
+        "regionId": 1,
+        "fullAddress": "北京dgts"
+    }
+]
