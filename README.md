@@ -21,22 +21,19 @@
 1.订单查询
 
 ## 安装依赖包
+
 ```
 npm install
 ```
 
 ### 在终端输入以下代码运行文件
+
 ```
 npm run serve
 ```
 
 ### 打包
+
 ```
 npm run build
 ```
-
-
-
-效果图![image-20230309133319011](C:\Users\黄昌平\AppData\Roaming\Typora\typora-user-images\image-20230309133319011.png)![image-20230309133408269](C:\Users\黄昌平\AppData\Roaming\Typora\typora-user-images\image-20230309133408269.png)
-
-![image-20230309142438908](C:\Users\黄昌平\AppData\Roaming\Typora\typora-user-images\image-20230309142438908.png)![image-20230309142645949](C:\Users\黄昌平\AppData\Roaming\Typora\typora-user-images\image-20230309142645949.png)![image-20230309142706477](C:\Users\黄昌平\AppData\Roaming\Typora\typora-user-images\image-20230309142706477.png)![image-20230309142718335](C:\Users\黄昌平\AppData\Roaming\Typora\typora-user-images\image-20230309142718335.png)

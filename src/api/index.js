@@ -2,7 +2,7 @@
 import requests from "./requset";
 import mockRequests from "./mockAjax";
 // 三级联动接口
-//  /api/product/getBaseCategoryList
+//  /product/getBaseCategoryList
 // 发送axios请求结果返回Promise对象
 export const reqCategoryList = () =>
   requests({ url: "/product/getBaseCategoryList", method: "get" });

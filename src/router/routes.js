@@ -1,30 +1,16 @@
-import Home from "@/pages/Home";
-import Search from "@/pages/Search";
-import Register from "@/pages/Register";
-import Login from "@/pages/Login";
-import Detail from "@/pages/Detail";
-import AddCartSuccess from "@/pages/AddCartSuccess";
-import ShopCart from "@/pages/ShopCart";
-import Trade from "@/pages/Trade";
-import Pay from "@/pages/Pay";
-import Paysuccess from "@/pages/PaySuccess";
-import Center from "@/pages/Center";
-// 引入二级组件
-import myOrder from "@/pages/Center/myOrder";
-import groupOrder from "@/pages/Center/groupOrder";
 export default [
   {
     path: "/center",
-    component: Center,
+    component: () => import("@/pages/Center"),
     meta: { show: true },
     children: [
       {
         path: "myorder",
-        component: myOrder,
+        component: () => import("@/pages/Center/myOrder"),
       },
       {
         path: "grouporder",
-        component: groupOrder,
+        component: () => import("@/pages/Center/groupOrder"),
       },
       {
         path: "/center",
@@ -34,12 +20,12 @@ export default [
   },
   {
     path: "/paysuccess",
-    component: Paysuccess,
+    component: () => import("@/pages/PaySuccess"),
     meta: { show: true },
   },
   {
     path: "/pay",
-    component: Pay,
+    component: () => import("@/pages/Pay"),
     meta: { show: true },
     // beforeEnter(to, from, next) {
     //   if (from.path == "/trade") {
@@ -51,7 +37,7 @@ export default [
   },
   {
     path: "/trade",
-    component: Trade,
+    component: () => import("@/pages/Trade"),
     meta: { show: true },
     // beforeEnter: (to, from, next) => {
     //   if (from.path == "/shopcart") {
@@ -63,39 +49,39 @@ export default [
   },
   {
     path: "/shopcart",
-    component: ShopCart,
+    component: () => import("@/pages/ShopCart"),
     meta: { show: true },
   },
   {
     path: "/addcartsuccess",
     name: "addcartsuccess",
-    component: AddCartSuccess,
+    component: () => import("@/pages/AddCartSuccess"),
     meta: { show: true },
   },
   {
     path: "/detail/:skuId?",
-    component: Detail,
+    component: () => import("@/pages/Detail"),
     meta: { show: true },
   },
   {
     path: "/home",
-    component: Home,
+    component: () => import("@/pages/Home"),
     meta: { show: true },
   },
   {
     name: "search",
     path: "/search/:keyword?",
-    component: Search,
+    component: () => import("@/pages/Search"),
     meta: { show: true },
   },
   {
     path: "/login",
-    component: Login,
+    component: () => import("@/pages/Login"),
     meta: { show: false },
   },
   {
     path: "/register",
-    component: Register,
+    component: () => import("@/pages/Register"),
     meta: { show: false },
   },
 
